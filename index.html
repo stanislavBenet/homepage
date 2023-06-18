@@ -9,6 +9,22 @@
 
   <body>
     <main>
+      <div id="popup" class="popup">
+        <a href="#" class="popup__area"></a>
+        <div class="popup__body">
+          <div class="popup__content">
+            <a href="#" class="popup__close">X</a>
+            <div class="popup__title">Do not forget to feed me!</div>
+            <div class="popup__text">
+              <img
+                class="popup__avatar"
+                src="assets/popupAvatar.jpg"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="resume">
         <div class="container">
           <div class="resume__block">
@@ -37,7 +53,12 @@
                   </div>
                   <span>Was born 30th of May 1997</span>
                 </a>
-                <a href="https://goo.gl/maps/fvt6hmqkifgbGavb8" rel="author" class="contact-info__item" target="_blank">
+                <a
+                  href="https://goo.gl/maps/fvt6hmqkifgbGavb8"
+                  rel="author"
+                  class="contact-info__item"
+                  target="_blank"
+                >
                   <div class="contact-info__item-icon-wrapper">
                     <svg
                       class="contact-info__item-icon"
@@ -71,20 +92,34 @@
                   <span>Stanislav Benet</span>
                 </a>
               </div>
-              <div class="myCard">
-                <div class="innerCard">
-                  <div class="frontSide">
-                    <div title="Here was Bulka" class="contact-info__block contact-info__block--center">
-                      <img class="contact-info__avatar" src="assets/avatar.jpg" alt="Avatar" />
-                    </div>
-                  </div>
-                  <div class="backSide">
-                      <div class="contact-info__block contact-info__block--center">
-                        <img class="contact-info__avatar" src="assets/avatar.png" alt="Avatar" />
+              <a href="#popup">
+                <div class="myCard">
+                  <div class="innerCard">
+                    <div class="frontSide">
+                      <div
+                        title="Here was Bulka"
+                        class="contact-info__block contact-info__block--center"
+                      >
+                        <img
+                          class="contact-info__avatar"
+                          src="assets/avatar.jpg"
+                          alt="Avatar"
+                        />
                       </div>
-                  </div>
-                </div>
-              </div>
+                    </div>
+                    <div class="backSide">
+                      <div
+                        class="contact-info__block contact-info__block--center"
+                      >
+                        <img
+                          class="contact-info__avatar"
+                          src="assets/avatar.png"
+                          alt="Avatar"
+                        />
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
 
               <div class="contact-info__block">
                 <a
@@ -108,7 +143,7 @@
                   <span>stanislav.benet@gmail.com</span>
                 </a>
                 <a
-                  href="tel:+380 95 0911 652"
+                  href="tel:+380950911652"
                   rel="author"
                   class="contact-info__item"
                   target="_blank"
@@ -165,10 +200,11 @@
                   </svg>
                 </div>
                 <p class="intro_text">
-                  I am a beginner full stack developer who wants to find himself in the IT world. I
-                  used to work as a manager for 4 years and as a pharmacist for 3 years but as
-                  soon as I tried programming I realized that I like it more and now my goal is
-                  to become a developer because this is what I'm really interested in.
+                  I am a beginner full stack developer who wants to find himself
+                  in the IT world. I used to work as a manager for 4 years and
+                  as a pharmacist for 3 years but as soon as I tried programming
+                  I realized that I like it more and now my goal is to become a
+                  developer because this is what I'm really interested in.
                 </p>
               </div>
             </div>
@@ -179,7 +215,9 @@
             <div class="skills">
               <h3 class="skills__header">Skills</h3>
               <p class="skills__text">
-                HTML, CSS, JavaScript(ECMAScript 2015), React, Redux toolkit, nodeJS, express.js, REST API PostgreSQL(sequelize), MongoDB(mongoose), Docker
+                HTML, CSS, JavaScript(ECMAScript 2015), React, Redux toolkit,
+                nodeJS, express.js, REST API PostgreSQL(sequelize),
+                MongoDB(mongoose), Docker
               </p>
             </div>
           </div>
@@ -189,47 +227,63 @@
             <div class="main-info fh">
               <div class="experiences">
                 <h3 class="experiences__header">Experience</h3>
-  <div class="experiences__company">
-    <div class="experiences__company-header">
-      <span class="experiences__company-header-durability">Since October 2022</span>
-      <h3 class="experiences__company-header-name">Training center by Freshcode</h3>
-    </div>
+                <div class="experiences__company">
+                  <div class="experiences__company-header">
+                    <span class="experiences__company-header-durability"
+                      >Since October 2022</span
+                    >
+                    <h3 class="experiences__company-header-name">
+                      Training center by Freshcode
+                    </h3>
+                  </div>
 
-    <div class="experiences__company-project">
-      <span class="experiences__company-project-role">Freshcode</span>
-      <h3 class="experiences__company-project-name">Getting basic knowlege</h3>
-      <ul class="experiences__company-project-responsibilities">
-        <li>Front-End</li>
-        <li>Back-End</li>
-        <li>FullStack</li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="additional-info fv">
-    <div class="additional-info__education">
-        <h3 class="additional-info__education-header">Education</h3>
-        <div class="additional-info__education-university">
-            <span class="additional-info__education-university-durability">2019</span>
-            <h3 class="additional-info__education-university-speciality">Master degree of biochemestry</h3>
-            <p class="additional-info__education-university-name">Odesa Mechnikov National University</p>
-        </div>
-    </div>
-
-    <div class="additional-info__languages">
-        <h3 class="additional-info__languages-header">Languages</h3>
-        <p class="additional-info__languages-item">
-            Ukrainian (Native)
-        </p>
-        <p class="additional-info__languages-item">
-            English (Upper-intermediate)
-        </p>
-    </div>
-</div>
+                  <div class="experiences__company-project">
+                    <span class="experiences__company-project-role"
+                      >Freshcode</span
+                    >
+                    <h3 class="experiences__company-project-name">
+                      Getting basic knowlege
+                    </h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>Front-End</li>
+                      <li>Back-End</li>
+                      <li>FullStack</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
+              <div class="additional-info fv">
+                <div class="additional-info__education">
+                  <h3 class="additional-info__education-header">Education</h3>
+                  <div class="additional-info__education-university">
+                    <span
+                      class="additional-info__education-university-durability"
+                      >2019</span
+                    >
+                    <h3
+                      class="additional-info__education-university-speciality"
+                    >
+                      Master degree of biochemestry
+                    </h3>
+                    <p class="additional-info__education-university-name">
+                      Odesa Mechnikov National University
+                    </p>
+                  </div>
+                </div>
 
-              <div class="additional-info fv"></div>
+                <div class="additional-info__languages">
+                  <h3 class="additional-info__languages-header">Languages</h3>
+                  <p class="additional-info__languages-item">
+                    Ukrainian (Native)
+                  </p>
+                  <p class="additional-info__languages-item">
+                    English (Upper-intermediate)
+                  </p>
+                </div>
+              </div>
             </div>
+
+            <div class="additional-info fv"></div>
           </div>
         </div>
       </div>

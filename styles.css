@@ -266,7 +266,6 @@ body {
   border-radius: 35%;
   width: 130px;
   height: 130px;
-  perspective: 1000px;
 }
 
 .innerCard {
@@ -276,6 +275,7 @@ body {
   transition: transform 0.8s;
   transform-style: preserve-3d;
   cursor: pointer;
+  z-index: -1;
 }
 
 .myCard:hover .innerCard {
@@ -298,4 +298,75 @@ body {
 
 .backSide {
   transform: rotateY(180deg);
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup:target .popup__content {
+  border-radius: 10%;
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.popup__content {
+  background-color: #fff;
+  color: black;
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+.popup__avatar {
+  width: 100%;
+  height: 100%;
+border-radius: 10%;
+}
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.popup__title {
+  text-align: center;
+  font-size: 40px;
+  margin: 0px 0px 0.5em 0px;
 }
