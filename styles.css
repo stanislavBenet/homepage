@@ -300,7 +300,6 @@ body.lock {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-
 .frontSide,
 .frontSide::before {
   background: linear-gradient(
@@ -332,7 +331,6 @@ body.lock {
   filter: blur(20px);
   animation: animate 4s linear infinite;
 }
-
 
 .popup {
   position: fixed;
@@ -451,3 +449,4 @@ body.lock {
     color: rgb(128, 0, 0);
   }
 }
+
