@@ -274,8 +274,8 @@ body.lock {
 
 .innerCard {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height:80%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
   cursor: pointer;
@@ -298,6 +298,7 @@ body.lock {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border: 1px solid rgba(255, 255, 255, 0.8);
+  
 }
 
 .frontSide,
@@ -344,6 +345,7 @@ body.lock {
   overflow-y: auto;
   overflow-x: hidden;
   transition: all 0.8s ease 0s;
+  z-index: 2;
 }
 
 .popup.open {
@@ -450,3 +452,31 @@ body.lock {
   }
 }
 
+.showing {
+  animation: 3s show ease;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.subShowing {
+  position: relative;
+  animation: 2s subShow ease;
+}
+
+@keyframes subShow {
+  from {
+    left: 200px;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
