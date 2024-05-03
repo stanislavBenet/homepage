@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="popUpStyles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="popup.js" defer></script>
     <title>Résumé</title>
@@ -17,33 +18,17 @@
             <div class="popup__content">
               <a href="#" class="popup__close close-popup">X</a>
               <div class="popup__title">
-                Do not forget to feed me! Buy me
-                <a href="#popup2" id="blink" class="popup-link popup__link"
-                  >food</a
-                >
               </div>
               <div class="popup__text">
                 <img
                   class="popup__avatar"
-                  src="assets/popupAvatar.jpg"
+                  src="assets/certificate.png"
                   alt="Avatar"
                 />
               </div>
             </div>
           </div>
         </div>
-        <div id="popup2" class="popup">
-          <a href="#" class="popup__area"></a>
-          <div class="popup__body">
-            <div class="popup__content">
-              <a href="#" class="popupTwo__close close-popup">X</a>
-              <div class="popup__text">
-                <img
-                  class="popup__avatar"
-                  src="assets/popupAvatar2.jpg"
-                  alt="Avatar"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -73,7 +58,7 @@
                         />
                       </svg>
                     </div>
-                    <span>Was born 30th of May 1997</span>
+                    <span>30th of May 1997</span>
                   </a>
                   <a
                     href="https://goo.gl/maps/fvt6hmqkifgbGavb8"
@@ -131,7 +116,6 @@
                     <div class="innerCard">
                       <div class="frontSide">
                         <div
-                          title="Here was Bulka"
                           class="contact-info__block contact-info__block--center"
                         >
                           <img
@@ -283,20 +267,20 @@
                   <div class="experiences__company">
                     <div class="experiences__company-header">
                       <span class="experiences__company-header-durability"
-                        >October 2022 - May 2023</span
+                        >October 2022 - April 2023</span
                       >
                       <h3 class="experiences__company-header-name">
                         Training center by Freshcode
                       </h3>
+                      <a href="#popup" class="popup-link">
+                        <span
+                          class="experiences__company-certificate popup__link"
+                          >Show certificate</span
+                        >
+                      </a>
                     </div>
 
                     <div class="experiences__company-project">
-                      <span class="experiences__company-project-role"
-                        >Freshcode</span
-                      >
-                      <h3 class="experiences__company-project-name">
-                        Getting basic knowlege
-                      </h3>
                       <ul class="experiences__company-project-responsibilities">
                         <li>Front-End (React, JS)</li>
                         <li>Back-End (Node.JS)</li>
@@ -309,20 +293,39 @@
                   <div class="additional-info__education">
                     <h3 class="additional-info__education-header">Education</h3>
                     <div class="additional-info__education-university">
-                      <span
-                        class="additional-info__education-university-durability"
-                        >2023 septemper - present</span
-                      >
                       <h3
                         class="additional-info__education-university-speciality"
                       >
                         Level 3 in Software engineering
                       </h3>
+                      <span
+                        class="additional-info__education-university-durability"
+                        >2023 septemper - June 2024</span
+                      >
                       <p class="additional-info__education-university-name">
                         <a
                           href="https://www.rcl.ac.uk/"
-                          style="text-decoration: none"
+                         
                           >Regent College London</a
+                        >
+                      </p>
+                    </div>
+                    <br />
+                    <div class="additional-info__education-university">
+                      <h3
+                        class="additional-info__education-university-speciality"
+                      >
+                        ESOL Level 2
+                      </h3>
+                      <span
+                        class="additional-info__education-university-durability"
+                        >2023 septemper - June 2024</span
+                      >
+                      <p class="additional-info__education-university-name">
+                        <a
+                          href="https://www.escg.ac.uk/"
+                        
+                          >East Sussex College</a
                         >
                       </p>
                     </div>
